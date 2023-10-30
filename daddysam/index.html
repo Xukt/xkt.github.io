@@ -173,40 +173,6 @@ $('html').on('contextmenu', (event) => {
   document.body.appendChild(img);
 });
 
-setInterval(() => {
-  $('.troll').remove();
-}, 600);
-
-$('.skip').click(() => {
-  skipIntro();
-});
-
-$.fn.extend({
-  animateCss: function (animationName) {
-    const animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-    this.addClass(`animated ${animationName}`).one(animationEnd, () => {
-      $(this).removeClass(`animated ${animationName}`);
-    });
-
-    return this;
-  },
-});
-
-const writeLine = (text, speed, timeout, callback) => {
-  timeout = typeof timeout === 'number' ? timeout : [0, (callback = timeout)];
-
-  const lineNumber = app.id !== 2 ? ++app.id : (app.id += 2);
-
-  setTimeout(() => {
-    const typed = new Typed(`#line${lineNumber}`, {
-      strings: text,
-      typeSpeed: speed,
-      onComplete: callback,
-    });
-  }, timeout);
-};
-
 
 clearCursor();
 
