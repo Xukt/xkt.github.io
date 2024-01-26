@@ -8,7 +8,7 @@ class _app {
     backgroundToggler = false;
     shouldIgnoreVideo = false;
     effects = ['bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'jello'];
-    brandDescription = ['Xkt0001.xyz', 'https://discord.gg/AW8WYk6RgK', 'xkt', 'xkt on spotify', 'xkt0001.xyz | discord.gg/AW8WYk6RgK'];
+    brandDescription = ['xkt0001.xyz', '---', 'xkt', 'xkt on discord', 'owner of Xkt LLC'];
   
     titleChanger = (text, delay) => {
       if (!text) return;
